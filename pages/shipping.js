@@ -60,7 +60,7 @@ export default function ShippingScreen() {
         <div className="mb-4">
           <label htmlFor="fullName">Full Name</label>
           <input
-            className="w-full"
+            className="px-3 py-3 placeholder-slate-300 text-slate-600 relative bg-white bg-white rounded text-sm border border-slate-300 outline-none focus:outline-none focus:ring w-full"
             id="fullName"
             autoFocus
             {...register('fullName', {
@@ -74,7 +74,7 @@ export default function ShippingScreen() {
         <div className="mb-4">
           <label htmlFor="address">Address</label>
           <input
-            className="w-full"
+            className="px-3 py-3 placeholder-slate-300 text-slate-600 relative bg-white bg-white rounded text-sm border border-slate-300 outline-none focus:outline-none focus:ring w-full"
             id="address"
             {...register('address', {
               required: 'Please enter address',
@@ -88,7 +88,7 @@ export default function ShippingScreen() {
         <div className="mb-4">
           <label htmlFor="city">City</label>
           <input
-            className="w-full"
+            className="px-3 py-3 placeholder-slate-300 text-slate-600 relative bg-white bg-white rounded text-sm border border-slate-300 outline-none focus:outline-none focus:ring w-full"
             id="city"
             {...register('city', {
               required: 'Please enter city',
@@ -101,7 +101,7 @@ export default function ShippingScreen() {
         <div className="mb-4">
           <label htmlFor="postalCode">Postal Code</label>
           <input
-            className="w-full"
+            className="px-3 py-3 placeholder-slate-300 text-slate-600 relative bg-white bg-white rounded text-sm border border-slate-300 outline-none focus:outline-none focus:ring w-full"
             id="postalCode"
             {...register('postalCode', {
               required: 'Please enter postal code',
@@ -114,7 +114,7 @@ export default function ShippingScreen() {
         <div className="mb-4">
           <label htmlFor="country">Country</label>
           <input
-            className="w-full"
+            className="px-3 py-3 placeholder-slate-300 text-slate-600 relative bg-white bg-white rounded text-sm border border-slate-300 outline-none focus:outline-none focus:ring w-full"
             id="country"
             {...register('country', {
               required: 'Please enter country',

@@ -48,7 +48,7 @@ export default function Layout({ title, children }) {
                   <a className="p-2">
                     Cart
                     {cartItemsCount > 0 && (
-                      <span className="ml-1 rounded-full bg-green-800 py-1 text-xs font-bold text-white ">
+                      <span className="ml-1 rounded-full bg-green-800 py-1 px-2 text-xs font-bold text-white ">
                         {cartItemsCount}
                       </span>
                     )}
@@ -93,7 +93,7 @@ export default function Layout({ title, children }) {
                   </Menu>
                 ) : (
                   <Link href="/login" legacyBehavior>
-                    <p className="p-2">Login</p>
+                    <a className="">Login</a>
                   </Link>
                 )}
               </div>
