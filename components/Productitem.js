@@ -2,12 +2,11 @@
 import Link from 'next/link';
 import React, { useContext } from 'react';
 import Layout from './Layout';
-import { useRouter } from 'next/router';
+
 import { Store } from '@/utils/Store';
 
 export default function Productitem({ product }) {
   const { state, dispatch } = useContext(Store);
-  const router = useRouter();
 
   if (!product) {
     return <Layout title="Product not found">Product not found</Layout>;

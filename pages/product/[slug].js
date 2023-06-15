@@ -1,18 +1,17 @@
 import Layout from '@/components/Layout';
 import Product from '@/models/Product';
 import { Store } from '@/utils/Store';
-import data from '@/utils/data';
+
 import db from '@/utils/db';
 import Image from 'next/image';
 import Link from 'next/link';
-import { useRouter } from 'next/router';
+
 import React from 'react';
 import { useContext } from 'react';
 
 export default function ProductScreen(props) {
   const { product } = props;
   const { state, dispatch } = useContext(Store);
-  const router = useRouter();
 
   if (!product) {
     return <Layout title="Product not found">Product not found</Layout>;

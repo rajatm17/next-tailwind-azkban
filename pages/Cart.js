@@ -3,7 +3,7 @@ import { Store } from '@/utils/Store';
 import Image from 'next/image';
 import Link from 'next/link';
 import React, { useContext } from 'react';
-import { XCircleIcon } from '@heroicons/react/outline';
+
 import { useRouter } from 'next/router';
 import dynamic from 'next/dynamic';
 

@@ -1,11 +1,8 @@
-import { Inter } from 'next/font/google';
 import Layout from '../components/Layout';
-import data from '@/utils/data';
+
 import Productitem from '@/components/Productitem';
 import Product from '@/models/Product';
 import db from '@/utils/db';
-
-const inter = Inter({ subsets: ['latin'] });
 
 export default function Home({ products }) {
   return (
