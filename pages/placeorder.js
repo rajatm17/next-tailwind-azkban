@@ -1,13 +1,13 @@
-import axios from 'axios';
+// import axios from 'axios';
 import Image from 'next/image';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 import Cookies from 'js-cookie';
 import React, { useContext, useEffect, useState } from 'react';
-import { toast } from 'react-toastify';
+// import { toast } from 'react-toastify';
 import CheckoutWizard from '../components/CheckoutWizard';
 import Layout from '../components/Layout';
-import { getError } from '../utils/error';
+// import { getError } from '../utils/error';
 import { Store } from '../utils/Store';
 
 export default function PlaceOrderScreen() {
@@ -37,15 +37,15 @@ export default function PlaceOrderScreen() {
   const placeOrderHandler = async () => {
     try {
       setLoading(true);
-      const { data } = await axios.post('/api/orders', {
-        orderItems: cartItems,
-        shippingAddress,
-        paymentMethod,
-        itemsPrice,
-        shippingPrice,
-        taxPrice,
-        totalPrice,
-      });
+      // const { data } = await axios.post('/api/orders', {
+      //   orderItems: cartItems,
+      //   shippingAddress,
+      //   paymentMethod,
+      //   itemsPrice,
+      //   shippingPrice,
+      //   taxPrice,
+      //   totalPrice,
+      // });
       setLoading(false);
       dispatch({ type: 'CART_CLEAR_ITEMS' });
       Cookies.set(
@@ -55,10 +55,11 @@ export default function PlaceOrderScreen() {
           cartItems: [],
         })
       );
-      router.push(`/order/${data._id}`);
+      router.push(`/soon`);
     } catch (err) {
-      setLoading(false);
-      toast.error(getError(err));
+      router.push(`/soon`);
+      // setLoading(false);
+      // toast.error(getError(err));
     }
   };
 
@@ -199,3 +200,5 @@ export default function PlaceOrderScreen() {
 }
 
 PlaceOrderScreen.auth = true;
+
+// /order/${data.user}
