@@ -102,7 +102,7 @@ export default function Layout({ title, children }) {
         </div>
         <main className="container m-auto mt-4 px-4">{children}</main>
         <footer className="flex justify-center items-center h-10 shadow-inner">
-          Made with 💕 by Rajat @Copyright
+          Made with 💕 by Rajat 💀☠️💀
         </footer>
       </div>
     </>
