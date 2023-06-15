@@ -1,10 +1,10 @@
 import axios from 'axios';
-import { useSession } from 'next-auth/react';
+
 import Image from 'next/image';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 import { useEffect, useReducer } from 'react';
-import { toast } from 'react-toastify';
+
 import Layout from '../../components/Layout';
 import { getError } from '../../utils/error';
 
