@@ -99,6 +99,8 @@ export default function LoginScreen() {
           <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
             Login
           </button>
+          <p>Email: admin@example.com</p> <br />
+          <p>Password: 123456</p>
         </div>
         {/* <div className="mb-4 ">
           Don&apos;t have an account? &nbsp;
