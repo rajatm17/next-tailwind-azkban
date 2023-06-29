@@ -41,7 +41,7 @@ export default function Layout({ title, children }) {
           <header>
             <nav className="flex h-12 justify-between shadow-md px-4 items-center">
               <Link href="/" legacyBehavior>
-                <a className="text-lg font-bold ">Azkban</a>
+                <a className="text-lg font-bold ">Azkaban</a>
               </Link>
               <div>
                 <Link href="/Cart" legacyBehavior>
